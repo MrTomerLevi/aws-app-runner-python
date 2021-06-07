@@ -1,7 +1,7 @@
 from flask import Flask
 import os
 
-PORT = 8080
+PORT = os.environ['PORT']
 name = os.environ['NAME']
 if name == None or len(name) == 0:
   name = "world"

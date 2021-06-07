@@ -5,4 +5,11 @@ build:
     build:        
       - pip install -r requirements.txt
 run:
-  command: python server.py
+  runtime-version: 3.7.7
+  command: python app/server.py
+  network:
+    port: 8000
+    env: PORT
+  env:
+    - name: NAME
+      value: "example_app_runner_python_app"

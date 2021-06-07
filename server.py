@@ -2,9 +2,7 @@ from flask import Flask
 import os
 
 PORT = os.environ['PORT']
-name = os.environ['NAME']
-if name == None or len(name) == 0:
-  name = "world"
+name = 'simple-server'
 MESSAGE = "Malabi makabi stopkes!"
 print("Message: '" + MESSAGE + "'")
 
